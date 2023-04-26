@@ -1,0 +1,14 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "53f683b42e616e84f8b5f227e7a6040ffe275bce56e1f3572f6e81fd27f3cbd4"
+build_start_time: [1682535045, 687500953]
+build_end_time: [1682535047, 823631048]
+inputs:
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/AppDelegate.swift": [1681822271, 75983762]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/Course.swift": [1682534421, 975833892]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/CoursesViewController.swift": [1682535045, 326642513]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/ImageViewController.swift": [1681909334, 921833515]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/SceneDelegate.swift": [1681822271, 80297946]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/TableViewCell.swift": [1682515943, 553793191]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/ViewController.swift": [1682518496, 333321094]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/WebViewController.swift": [1682518496, 267648220]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/WebsiteDescription.swift": [1682534421, 950917243]

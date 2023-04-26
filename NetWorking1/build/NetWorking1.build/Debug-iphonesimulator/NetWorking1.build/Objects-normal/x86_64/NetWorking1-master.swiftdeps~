@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "53f683b42e616e84f8b5f227e7a6040ffe275bce56e1f3572f6e81fd27f3cbd4"
+build_start_time: [1681823425, 905931949]
+build_end_time: [1681823425, 982697963]
+inputs:
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/AppDelegate.swift": !private [1681822271, 75983762]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/SceneDelegate.swift": !private [1681822271, 80297946]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/ViewController.swift": !private [1681822271, 84579467]
