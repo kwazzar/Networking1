@@ -1,11 +1,11 @@
 version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
 options: "53f683b42e616e84f8b5f227e7a6040ffe275bce56e1f3572f6e81fd27f3cbd4"
-build_start_time: [1682535674, 173218011]
-build_end_time: [1682535674, 418831825]
+build_start_time: [1682684972, 801547050]
+build_end_time: [1682684975, 147163867]
 inputs:
   "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/AppDelegate.swift": [1681822271, 75983762]
-  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/Course.swift": [1682534421, 975833892]
-  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/CoursesViewController.swift": !private [1682535673, 240718841]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/Course.swift": [1682605002, 580157995]
+  "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/CoursesViewController.swift": [1682684972, 566016197]
   "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/ImageViewController.swift": [1681909334, 921833515]
   "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/SceneDelegate.swift": [1681822271, 80297946]
   "/Users/kwazar/Swift/Networking1/NetWorking1/NetWorking1/TableViewCell.swift": [1682515943, 553793191]
