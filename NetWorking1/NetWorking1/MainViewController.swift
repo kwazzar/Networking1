@@ -57,5 +57,4 @@ class MainViewController: UICollectionViewController {
             print("Upload Image")
         }
     }
-
 }
