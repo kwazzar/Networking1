@@ -267,10 +267,19 @@ SWIFT_CLASS("_TtC11NetWorking111AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC11NetWorking118CollectionViewCell")
+@interface CollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified label;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITableView;
 @class NSString;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC11NetWorking121CoursesViewController")
 @interface CoursesViewController : UIViewController
@@ -306,6 +315,19 @@ SWIFT_CLASS("_TtC11NetWorking119ImageViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UICollectionView;
+@class UICollectionViewLayout;
+
+SWIFT_CLASS("_TtC11NetWorking118MainViewController")
+@interface MainViewController : UICollectionViewController
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIScene;
 
@@ -321,7 +343,6 @@ SWIFT_CLASS("_TtC11NetWorking113SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
 
 SWIFT_CLASS("_TtC11NetWorking113TableViewCell")
 @interface TableViewCell : UITableViewCell
@@ -330,15 +351,6 @@ SWIFT_CLASS("_TtC11NetWorking113TableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified numberOfLessons;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified numberOfTests;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC11NetWorking114ViewController")
-@interface ViewController : UIViewController
-- (IBAction)getRequest:(id _Nonnull)sender;
-- (IBAction)postRequest:(id _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 

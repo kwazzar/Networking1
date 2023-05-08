@@ -18,7 +18,9 @@
 		E35B485E29EEC9BF00EB462F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B485C29EEC9BF00EB462F /* Main.storyboard */; };
 		E35B486029EEC9C100EB462F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35B485F29EEC9C100EB462F /* Assets.xcassets */; };
 		E35B486329EEC9C100EB462F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35B486129EEC9C100EB462F /* LaunchScreen.storyboard */; };
-		E3A8071429F011A10027CF0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A8071329F011A10027CF0D /* ViewController.swift */; };
+		E3835F742A09570B009CF3D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3835F732A09570B009CF3D6 /* NetworkManager.swift */; };
+		E39277FF29FC1B6F007670E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39277FE29FC1B6F007670E5 /* MainViewController.swift */; };
+		E392780129FC1BEF007670E5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E392780029FC1BEF007670E5 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,9 @@
 		E35B485F29EEC9C100EB462F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E35B486229EEC9C100EB462F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35B486429EEC9C100EB462F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3A8071329F011A10027CF0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3835F732A09570B009CF3D6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E39277FE29FC1B6F007670E5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E392780029FC1BEF007670E5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +75,11 @@
 				E35B485629EEC9BF00EB462F /* AppDelegate.swift */,
 				E35B485829EEC9BF00EB462F /* SceneDelegate.swift */,
 				E35B485A29EEC9BF00EB462F /* ImageViewController.swift */,
-				E3A8071329F011A10027CF0D /* ViewController.swift */,
+				E3835F732A09570B009CF3D6 /* NetworkManager.swift */,
 				E31051D629F9419B0011A14A /* CoursesViewController.swift */,
 				E31051D829F946510011A14A /* TableViewCell.swift */,
+				E39277FE29FC1B6F007670E5 /* MainViewController.swift */,
+				E392780029FC1BEF007670E5 /* CollectionViewCell.swift */,
 				E31051DA29F962800011A14A /* WebViewController.swift */,
 				E35B485C29EEC9BF00EB462F /* Main.storyboard */,
 				E31051DC29F977780011A14A /* Course.swift */,
@@ -156,15 +162,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3835F742A09570B009CF3D6 /* NetworkManager.swift in Sources */,
 				E31051DF29F98D490011A14A /* WebsiteDescription.swift in Sources */,
 				E31051DD29F977780011A14A /* Course.swift in Sources */,
 				E35B485B29EEC9BF00EB462F /* ImageViewController.swift in Sources */,
 				E35B485729EEC9BF00EB462F /* AppDelegate.swift in Sources */,
-				E3A8071429F011A10027CF0D /* ViewController.swift in Sources */,
 				E31051D929F946510011A14A /* TableViewCell.swift in Sources */,
 				E31051DB29F962800011A14A /* WebViewController.swift in Sources */,
 				E35B485929EEC9BF00EB462F /* SceneDelegate.swift in Sources */,
 				E31051D729F9419B0011A14A /* CoursesViewController.swift in Sources */,
+				E39277FF29FC1B6F007670E5 /* MainViewController.swift in Sources */,
+				E392780129FC1BEF007670E5 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
