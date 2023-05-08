@@ -25,9 +25,6 @@ class MainViewController: UICollectionViewController {
     
     // MARK: UICollectionViewDataSource
 
- 
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return actions.count
@@ -37,7 +34,6 @@ class MainViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
         
         cell.label.text = actions[indexPath.row].rawValue
-    
     
         return cell
     }
