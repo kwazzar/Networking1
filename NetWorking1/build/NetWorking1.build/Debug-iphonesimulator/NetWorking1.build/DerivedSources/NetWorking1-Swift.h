@@ -232,6 +232,7 @@ using UInt = size_t;
 #endif
 @import CoreFoundation;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 @import WebKit;
 #endif
@@ -255,15 +256,11 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class UIApplication;
-@class UISceneSession;
-@class UISceneConnectionOptions;
-@class UISceneConfiguration;
+@class NSString;
 
 SWIFT_CLASS("_TtC11NetWorking111AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-- (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
-- (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
-- (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
+- (void)application:(UIApplication * _Nonnull)application handleEventsForBackgroundURLSession:(NSString * _Nonnull)identifier completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -278,13 +275,11 @@ SWIFT_CLASS("_TtC11NetWorking118CollectionViewCell")
 @end
 
 @class UITableView;
-@class NSString;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC11NetWorking121CoursesViewController")
 @interface CoursesViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
-- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -303,6 +298,32 @@ SWIFT_CLASS("_TtC11NetWorking121CoursesViewController")
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
+
+SWIFT_CLASS("_TtC11NetWorking112DataProvider")
+@interface DataProvider : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSURLSession;
+@class NSURLSessionTask;
+
+@interface DataProvider (SWIFT_EXTENSION(NetWorking1)) <NSURLSessionTaskDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session taskIsWaitingForConnectivity:(NSURLSessionTask * _Nonnull)task;
+@end
+
+
+@interface DataProvider (SWIFT_EXTENSION(NetWorking1)) <NSURLSessionDelegate>
+- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession * _Nonnull)session;
+@end
+
+@class NSURLSessionDownloadTask;
+@class NSURL;
+
+@interface DataProvider (SWIFT_EXTENSION(NetWorking1)) <NSURLSessionDownloadDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
+@end
+
 @class UIImageView;
 @class UIActivityIndicatorView;
 
@@ -316,20 +337,26 @@ SWIFT_CLASS("_TtC11NetWorking119ImageViewController")
 @end
 
 @class UICollectionView;
+@class UIStoryboardSegue;
 @class UICollectionViewLayout;
 
 SWIFT_CLASS("_TtC11NetWorking118MainViewController")
 @interface MainViewController : UICollectionViewController
+- (void)viewDidLoad;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithCollectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class UIWindow;
 @class UIScene;
+@class UISceneSession;
+@class UISceneConnectionOptions;
 
 SWIFT_CLASS("_TtC11NetWorking113SceneDelegate")
 @interface SceneDelegate : UIResponder <UIWindowSceneDelegate>

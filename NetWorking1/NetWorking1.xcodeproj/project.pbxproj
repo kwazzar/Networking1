@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20D0A76D120250F553D01B02 /* libPods-NetWorking1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0877C21DD064FEF423B951E3 /* libPods-NetWorking1.a */; };
 		E31051D729F9419B0011A14A /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31051D629F9419B0011A14A /* CoursesViewController.swift */; };
 		E31051D929F946510011A14A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31051D829F946510011A14A /* TableViewCell.swift */; };
 		E31051DB29F962800011A14A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31051DA29F962800011A14A /* WebViewController.swift */; };
 		E31051DD29F977780011A14A /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31051DC29F977780011A14A /* Course.swift */; };
 		E31051DF29F98D490011A14A /* WebsiteDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31051DE29F98D490011A14A /* WebsiteDescription.swift */; };
+		E34ADD9B2A0D2EB30048D4E3 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34ADD9A2A0D2EB30048D4E3 /* DataProvider.swift */; };
 		E35262822A0A7D09002FDFB8 /* ImageProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35262812A0A7D09002FDFB8 /* ImageProperties.swift */; };
 		E35262842A0A97CA002FDFB8 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35262832A0A97CA002FDFB8 /* Keys.swift */; };
-		E35262862A0AA738002FDFB8 /* .gitIgnore in Resources */ = {isa = PBXBuildFile; fileRef = E35262852A0AA738002FDFB8 /* .gitIgnore */; };
+		E35262892A0AB190002FDFB8 /* .gitIgnore in Resources */ = {isa = PBXBuildFile; fileRef = E35262882A0AB190002FDFB8 /* .gitIgnore */; };
 		E35B485729EEC9BF00EB462F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B485629EEC9BF00EB462F /* AppDelegate.swift */; };
 		E35B485929EEC9BF00EB462F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B485829EEC9BF00EB462F /* SceneDelegate.swift */; };
 		E35B485B29EEC9BF00EB462F /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B485A29EEC9BF00EB462F /* ImageViewController.swift */; };
@@ -24,17 +26,22 @@
 		E3835F742A09570B009CF3D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3835F732A09570B009CF3D6 /* NetworkManager.swift */; };
 		E39277FF29FC1B6F007670E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39277FE29FC1B6F007670E5 /* MainViewController.swift */; };
 		E392780129FC1BEF007670E5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E392780029FC1BEF007670E5 /* CollectionViewCell.swift */; };
+		E394A2752A1E4AD8007B5942 /* AlamofireNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394A2742A1E4AD8007B5942 /* AlamofireNetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0877C21DD064FEF423B951E3 /* libPods-NetWorking1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetWorking1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D6346A085E79A2BFF75697 /* Pods-NetWorking1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorking1.debug.xcconfig"; path = "Target Support Files/Pods-NetWorking1/Pods-NetWorking1.debug.xcconfig"; sourceTree = "<group>"; };
+		9E3BCC57E83811126D23EBD6 /* Pods-NetWorking1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorking1.release.xcconfig"; path = "Target Support Files/Pods-NetWorking1/Pods-NetWorking1.release.xcconfig"; sourceTree = "<group>"; };
 		E31051D629F9419B0011A14A /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		E31051D829F946510011A14A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E31051DA29F962800011A14A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E31051DC29F977780011A14A /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		E31051DE29F98D490011A14A /* WebsiteDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteDescription.swift; sourceTree = "<group>"; };
+		E34ADD9A2A0D2EB30048D4E3 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		E35262812A0A7D09002FDFB8 /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
 		E35262832A0A97CA002FDFB8 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
-		E35262852A0AA738002FDFB8 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
+		E35262882A0AB190002FDFB8 /* .gitIgnore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
 		E35B485329EEC9BF00EB462F /* NetWorking1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWorking1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35B485629EEC9BF00EB462F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35B485829EEC9BF00EB462F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +53,7 @@
 		E3835F732A09570B009CF3D6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E39277FE29FC1B6F007670E5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E392780029FC1BEF007670E5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E394A2742A1E4AD8007B5942 /* AlamofireNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,17 +61,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D0A76D120250F553D01B02 /* libPods-NetWorking1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67F3C6E6585A7786686247D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0877C21DD064FEF423B951E3 /* libPods-NetWorking1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E35B484A29EEC9BE00EB462F = {
 			isa = PBXGroup;
 			children = (
 				E35B485529EEC9BF00EB462F /* NetWorking1 */,
 				E35B485429EEC9BF00EB462F /* Products */,
+				F6FB43BEBA8A83D499EFBDD3 /* Pods */,
+				67F3C6E6585A7786686247D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,12 +97,14 @@
 		E35B485529EEC9BF00EB462F /* NetWorking1 */ = {
 			isa = PBXGroup;
 			children = (
-				E35262852A0AA738002FDFB8 /* .gitIgnore */,
+				E35262882A0AB190002FDFB8 /* .gitIgnore */,
 				E35B485629EEC9BF00EB462F /* AppDelegate.swift */,
 				E35B485829EEC9BF00EB462F /* SceneDelegate.swift */,
+				E394A2742A1E4AD8007B5942 /* AlamofireNetworkRequest.swift */,
 				E35B485A29EEC9BF00EB462F /* ImageViewController.swift */,
 				E35262812A0A7D09002FDFB8 /* ImageProperties.swift */,
 				E3835F732A09570B009CF3D6 /* NetworkManager.swift */,
+				E34ADD9A2A0D2EB30048D4E3 /* DataProvider.swift */,
 				E35262832A0A97CA002FDFB8 /* Keys.swift */,
 				E31051D629F9419B0011A14A /* CoursesViewController.swift */,
 				E31051D829F946510011A14A /* TableViewCell.swift */,
@@ -100,6 +121,15 @@
 			path = NetWorking1;
 			sourceTree = "<group>";
 		};
+		F6FB43BEBA8A83D499EFBDD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77D6346A085E79A2BFF75697 /* Pods-NetWorking1.debug.xcconfig */,
+				9E3BCC57E83811126D23EBD6 /* Pods-NetWorking1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E35B486729EEC9C100EB462F /* Build configuration list for PBXNativeTarget "NetWorking1" */;
 			buildPhases = (
+				3595A0E3E059E9E24079A46A /* [CP] Check Pods Manifest.lock */,
 				E35B484F29EEC9BF00EB462F /* Sources */,
 				E35B485029EEC9BF00EB462F /* Frameworks */,
 				E35B485129EEC9BF00EB462F /* Resources */,
@@ -158,7 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E35262862A0AA738002FDFB8 /* .gitIgnore in Resources */,
+				E35262892A0AB190002FDFB8 /* .gitIgnore in Resources */,
 				E35B486329EEC9C100EB462F /* LaunchScreen.storyboard in Resources */,
 				E35B486029EEC9C100EB462F /* Assets.xcassets in Resources */,
 				E35B485E29EEC9BF00EB462F /* Main.storyboard in Resources */,
@@ -166,6 +197,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3595A0E3E059E9E24079A46A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetWorking1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E35B484F29EEC9BF00EB462F /* Sources */ = {
@@ -178,10 +234,12 @@
 				E35B485B29EEC9BF00EB462F /* ImageViewController.swift in Sources */,
 				E35262842A0A97CA002FDFB8 /* Keys.swift in Sources */,
 				E35B485729EEC9BF00EB462F /* AppDelegate.swift in Sources */,
+				E394A2752A1E4AD8007B5942 /* AlamofireNetworkRequest.swift in Sources */,
 				E31051D929F946510011A14A /* TableViewCell.swift in Sources */,
 				E31051DB29F962800011A14A /* WebViewController.swift in Sources */,
 				E35B485929EEC9BF00EB462F /* SceneDelegate.swift in Sources */,
 				E35262822A0A7D09002FDFB8 /* ImageProperties.swift in Sources */,
+				E34ADD9B2A0D2EB30048D4E3 /* DataProvider.swift in Sources */,
 				E31051D729F9419B0011A14A /* CoursesViewController.swift in Sources */,
 				E39277FF29FC1B6F007670E5 /* MainViewController.swift in Sources */,
 				E392780129FC1BEF007670E5 /* CollectionViewCell.swift in Sources */,
@@ -326,6 +384,7 @@
 		};
 		E35B486829EEC9C100EB462F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D6346A085E79A2BFF75697 /* Pods-NetWorking1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,6 +413,7 @@
 		};
 		E35B486929EEC9C100EB462F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3BCC57E83811126D23EBD6 /* Pods-NetWorking1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.gitIgnore</key>
+		<data>
+		YzRZXPYHqIV22nmf8yoSgYqmu0M=
+		</data>
 		<key>Assets.car</key>
 		<data>
 		pn/6a4utgw8AUVtbBXJDth8fsO4=
@@ -34,7 +38,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-jA3-IE-6ff.nib</key>
 		<data>
-		YnCi9cYufUqiuOLkGCKVb+6KSIY=
+		ndjcGmjK3dmz5y9LeorrxszzY/8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-Fef-pv-8nr.nib</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qSIo2yvxYMcq+v7mcoxc+YHeaS8=
+		Z3Io4UH98IjbEflUguYxKey2MAs=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -67,6 +71,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>.gitIgnore</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p7pJCJnka/UbQO5s2R9hFSc0Eg5CHrS/IXauttsh6Jo=
+			</data>
+		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
@@ -120,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LdqItZjNzbcIt34EQlhSK0wdqm/SphQlVdYbPlIJhIk=
+			ZxCxu5mdSysqmhhVaVy7oCBJAxgGZfiHAfdaZcE7//I=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-Fef-pv-8nr.nib</key>
