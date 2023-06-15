@@ -38,6 +38,7 @@
 		E31051DA29F962800011A14A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		E31051DC29F977780011A14A /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		E31051DE29F98D490011A14A /* WebsiteDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteDescription.swift; sourceTree = "<group>"; };
+		E34AD3AF2A3B76430090E9F8 /* NetWorking1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetWorking1.entitlements; sourceTree = "<group>"; };
 		E34ADD9A2A0D2EB30048D4E3 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		E35262812A0A7D09002FDFB8 /* ImageProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProperties.swift; sourceTree = "<group>"; };
 		E35262832A0A97CA002FDFB8 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
@@ -97,23 +98,24 @@
 		E35B485529EEC9BF00EB462F /* NetWorking1 */ = {
 			isa = PBXGroup;
 			children = (
+				E34AD3AF2A3B76430090E9F8 /* NetWorking1.entitlements */,
 				E35262882A0AB190002FDFB8 /* .gitIgnore */,
 				E35B485629EEC9BF00EB462F /* AppDelegate.swift */,
 				E35B485829EEC9BF00EB462F /* SceneDelegate.swift */,
+				E39277FE29FC1B6F007670E5 /* MainViewController.swift */,
 				E394A2742A1E4AD8007B5942 /* AlamofireNetworkRequest.swift */,
-				E35B485A29EEC9BF00EB462F /* ImageViewController.swift */,
-				E35262812A0A7D09002FDFB8 /* ImageProperties.swift */,
 				E3835F732A09570B009CF3D6 /* NetworkManager.swift */,
 				E34ADD9A2A0D2EB30048D4E3 /* DataProvider.swift */,
-				E35262832A0A97CA002FDFB8 /* Keys.swift */,
-				E31051D629F9419B0011A14A /* CoursesViewController.swift */,
-				E31051D829F946510011A14A /* TableViewCell.swift */,
-				E39277FE29FC1B6F007670E5 /* MainViewController.swift */,
 				E392780029FC1BEF007670E5 /* CollectionViewCell.swift */,
+				E35B485A29EEC9BF00EB462F /* ImageViewController.swift */,
+				E31051D629F9419B0011A14A /* CoursesViewController.swift */,
+				E35262812A0A7D09002FDFB8 /* ImageProperties.swift */,
+				E31051DC29F977780011A14A /* Course.swift */,
+				E35262832A0A97CA002FDFB8 /* Keys.swift */,
+				E31051DE29F98D490011A14A /* WebsiteDescription.swift */,
+				E31051D829F946510011A14A /* TableViewCell.swift */,
 				E31051DA29F962800011A14A /* WebViewController.swift */,
 				E35B485C29EEC9BF00EB462F /* Main.storyboard */,
-				E31051DC29F977780011A14A /* Course.swift */,
-				E31051DE29F98D490011A14A /* WebsiteDescription.swift */,
 				E35B485F29EEC9C100EB462F /* Assets.xcassets */,
 				E35B486129EEC9C100EB462F /* LaunchScreen.storyboard */,
 				E35B486429EEC9C100EB462F /* Info.plist */,
@@ -388,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NetWorking1/NetWorking1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XK3NFM9Y7;
@@ -417,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NetWorking1/NetWorking1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6XK3NFM9Y7;

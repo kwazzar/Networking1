@@ -324,11 +324,14 @@ SWIFT_CLASS("_TtC11NetWorking112DataProvider")
 
 @class UIImageView;
 @class UIActivityIndicatorView;
+@class UIProgressView;
 
 SWIFT_CLASS("_TtC11NetWorking119ImageViewController")
 @interface ImageViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified activityIndicator;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified completedLabel;
+@property (nonatomic, weak) IBOutlet UIProgressView * _Null_unspecified progressView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -379,7 +382,6 @@ SWIFT_CLASS("_TtC11NetWorking113TableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIProgressView;
 @class WKWebView;
 
 SWIFT_CLASS("_TtC11NetWorking117WebViewController")

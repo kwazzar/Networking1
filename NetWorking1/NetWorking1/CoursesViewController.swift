@@ -13,10 +13,12 @@ class CoursesViewController: UIViewController {
     private var courseName: String?
     private var courseURL: String?
     private let url = "https://swiftbook.ru//wp-content/uploads/api/api_courses"
+    private let postRequestUrl = "https://jsonplaceholder.typicode.com/posts"
+    private let putRequestUrl = "https://jsonplaceholder.typicode.com/posts/1"
     
     @IBOutlet weak var tableView: UITableView!
     
-
+    
     func fetchData() {
         
         NetworkManager.fetchData(url: url) { (courses) in
@@ -28,7 +30,39 @@ class CoursesViewController: UIViewController {
     }
     
     func fetchDataWithAlamofire() {
-        AlamofireNetworkRequest.sendRequest(url: url)
+        
+        AlamofireNetworkRequest.sendRequest(url: url) { (courses) in
+            self.courses = courses
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
+        }
+    }
+    
+    func postRequest() {
+        
+        AlamofireNetworkRequest.postRequest(url: postRequestUrl) { courses in
+            
+            self.courses = courses
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    func putRequest() {
+        
+        AlamofireNetworkRequest.puttRequest(url: putRequestUrl) { courses in
+            
+            self.courses = courses
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+        
     }
     
     private func configureCell(cell: TableViewCell, for indexPath: IndexPath) {
@@ -50,19 +84,19 @@ class CoursesViewController: UIViewController {
             
             DispatchQueue.main.async {
                 cell.courseImage.image = UIImage(data: imageData)
-
+                
             }
         }
-      
+        
         // MARK: - Navigation
         
-       func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           let webViewController = segue.destination as! WebViewController
-           webViewController.selectedCourse = courseName
-           
-           if let url = courseURL {
-               webViewController.courseURL = url 
-           }
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let webViewController = segue.destination as! WebViewController
+            webViewController.selectedCourse = courseName
+            
+            if let url = courseURL {
+                webViewController.courseURL = url
+            }
         }
     }
     
