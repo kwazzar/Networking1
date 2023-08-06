@@ -229,12 +229,4 @@ class AlamofireNetworkRequest {
         
             
 
-            
-
-
-
-
-// видео 3.12
-
-
 

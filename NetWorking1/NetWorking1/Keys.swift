@@ -6,5 +6,7 @@
 //
 
 import Foundation
+import FBSDKCoreKit
 
  let yourClientId = "ce2f424d4beeb99"
+

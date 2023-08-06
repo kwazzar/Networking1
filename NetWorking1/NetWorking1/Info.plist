@@ -23,5 +23,27 @@
 	</dict>
 	<key>UIBackgroundModes</key>
 	<array/>
+    <key>CFBundleURLTypes</key>
+     <array>
+       <dict>
+         <key>CFBundleURLSchemes</key>
+         <array>
+           <string>fb1314195279448315</string>
+         </array>
+       </dict>
+     </array>
+     <key>FacebookAppID</key>
+     <string>1314195279448315</string>
+     <key>FacebookClientToken</key>
+     <string>86f551a7f4faea0190abd60403e66f30</string>
+     <key>FacebookDisplayName</key>
+     <string>NetWorking1</string>
+     <key>LSApplicationQueriesSchemes</key>
+     <array>
+       <string>fbapi</string>
+       <string>fb-messenger-share-api</string>
+       <string>fbauth2</string>
+       <string>fbshareextension</string>
+     </array>
 </dict>
 </plist>

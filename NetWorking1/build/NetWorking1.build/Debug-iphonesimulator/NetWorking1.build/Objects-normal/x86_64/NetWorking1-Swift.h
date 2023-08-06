@@ -229,6 +229,7 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import FBSDKLoginKit;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -254,10 +255,13 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class UIApplication;
+@class NSURL;
 @class NSString;
 
 SWIFT_CLASS("_TtC11NetWorking111AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+- (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)application:(UIApplication * _Nonnull)app openURL:(NSURL * _Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application handleEventsForBackgroundURLSession:(NSString * _Nonnull)identifier completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -303,19 +307,18 @@ SWIFT_CLASS("_TtC11NetWorking112DataProvider")
 @end
 
 @class NSURLSession;
+
+@interface DataProvider (SWIFT_EXTENSION(NetWorking1)) <NSURLSessionDelegate>
+- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession * _Nonnull)session;
+@end
+
 @class NSURLSessionTask;
 
 @interface DataProvider (SWIFT_EXTENSION(NetWorking1)) <NSURLSessionTaskDelegate>
 - (void)URLSession:(NSURLSession * _Nonnull)session taskIsWaitingForConnectivity:(NSURLSessionTask * _Nonnull)task;
 @end
 
-
-@interface DataProvider (SWIFT_EXTENSION(NetWorking1)) <NSURLSessionDelegate>
-- (void)URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession * _Nonnull)session;
-@end
-
 @class NSURLSessionDownloadTask;
-@class NSURL;
 
 @interface DataProvider (SWIFT_EXTENSION(NetWorking1)) <NSURLSessionDownloadDelegate>
 - (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
@@ -337,6 +340,23 @@ SWIFT_CLASS("_TtC11NetWorking119ImageViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC11NetWorking119LoginViewController")
+@interface LoginViewController : UIViewController
+- (void)viewDidLoad;
+@property (nonatomic, readonly) UIStatusBarStyle preferredStatusBarStyle;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class FBSDKLoginButton;
+@class FBSDKLoginManagerLoginResult;
+
+@interface LoginViewController (SWIFT_EXTENSION(NetWorking1)) <FBSDKLoginButtonDelegate>
+- (void)loginButton:(FBSDKLoginButton * _Nonnull)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * _Nullable)result error:(NSError * _Nullable)error;
+- (void)loginButtonDidLogOut:(FBSDKLoginButton * _Nonnull)loginButton;
+@end
+
 @class UICollectionView;
 @class UIStoryboardSegue;
 @class UICollectionViewLayout;
@@ -356,13 +376,10 @@ SWIFT_CLASS("_TtC11NetWorking118MainViewController")
 
 @class UIWindow;
 @class UIScene;
-@class UISceneSession;
-@class UISceneConnectionOptions;
 
 SWIFT_CLASS("_TtC11NetWorking113SceneDelegate")
 @interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
-- (void)scene:(UIScene * _Nonnull)scene willConnectToSession:(UISceneSession * _Nonnull)session options:(UISceneConnectionOptions * _Nonnull)connectionOptions;
 - (void)sceneDidDisconnect:(UIScene * _Nonnull)scene;
 - (void)sceneDidBecomeActive:(UIScene * _Nonnull)scene;
 - (void)sceneWillResignActive:(UIScene * _Nonnull)scene;
@@ -381,6 +398,8 @@ SWIFT_CLASS("_TtC11NetWorking113TableViewCell")
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 @class WKWebView;
 
