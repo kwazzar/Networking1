@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jA3-IE-6ff">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LCZ-Jq-iiC">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -280,6 +280,41 @@
             </objects>
             <point key="canvasLocation" x="2946.4000000000001" y="369.45812807881777"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Zuy-q1-avl">
+            <objects>
+                <viewController id="LCZ-Jq-iiC" customClass="LoginViewController" customModule="NetWorking1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WjN-Mp-bUp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firebaseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4Pr-wa-804">
+                                <rect key="frame" x="97.666666666666686" y="47.000000000000014" width="180" height="181.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Pr-wa-804" secondAttribute="height" multiplier="127:128" id="DYA-yQ-r3d"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Networking1 Demo App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tU0-zC-7cp">
+                                <rect key="frame" x="55.666666666666657" y="236" width="264" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rBJ-Wg-rPE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tU0-zC-7cp" firstAttribute="top" secondItem="4Pr-wa-804" secondAttribute="bottom" constant="7.6666666666666288" id="6x0-kb-cVL"/>
+                            <constraint firstItem="tU0-zC-7cp" firstAttribute="centerX" secondItem="WjN-Mp-bUp" secondAttribute="centerX" id="LQk-XV-hQo"/>
+                            <constraint firstItem="4Pr-wa-804" firstAttribute="centerX" secondItem="WjN-Mp-bUp" secondAttribute="centerX" id="WBa-Ds-b9s"/>
+                            <constraint firstItem="4Pr-wa-804" firstAttribute="top" secondItem="rBJ-Wg-rPE" secondAttribute="top" id="i0h-fq-tS2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioq-UU-Sh2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="3"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="BfZ-pO-tQB">
             <objects>
@@ -304,8 +339,12 @@
         <segue reference="E34-aA-FFe"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="firebaseLogo" width="180" height="180"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

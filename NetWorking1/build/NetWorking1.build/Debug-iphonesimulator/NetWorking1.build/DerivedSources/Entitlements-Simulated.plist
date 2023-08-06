@@ -4,5 +4,7 @@
 <dict>
 	<key>application-identifier</key>
 	<string>6XK3NFM9Y7.Kwazzar.NetWorking1</string>
+	<key>keychain-access-groups</key>
+	<array/>
 </dict>
 </plist>

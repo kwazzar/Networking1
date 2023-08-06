@@ -27,6 +27,8 @@
 		E39277FF29FC1B6F007670E5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39277FE29FC1B6F007670E5 /* MainViewController.swift */; };
 		E392780129FC1BEF007670E5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E392780029FC1BEF007670E5 /* CollectionViewCell.swift */; };
 		E394A2752A1E4AD8007B5942 /* AlamofireNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394A2742A1E4AD8007B5942 /* AlamofireNetworkRequest.swift */; };
+		E39D7A0C2A4A5D1C002D5642 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39D7A0B2A4A5D1C002D5642 /* LoginViewController.swift */; };
+		E3AD24192A4B314800C2A953 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AD24182A4B314800C2A953 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		E39277FE29FC1B6F007670E5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E392780029FC1BEF007670E5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E394A2742A1E4AD8007B5942 /* AlamofireNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkRequest.swift; sourceTree = "<group>"; };
+		E39D7A0B2A4A5D1C002D5642 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E3AD24182A4B314800C2A953 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				E35B485629EEC9BF00EB462F /* AppDelegate.swift */,
 				E35B485829EEC9BF00EB462F /* SceneDelegate.swift */,
 				E39277FE29FC1B6F007670E5 /* MainViewController.swift */,
+				E39D7A0B2A4A5D1C002D5642 /* LoginViewController.swift */,
 				E394A2742A1E4AD8007B5942 /* AlamofireNetworkRequest.swift */,
 				E3835F732A09570B009CF3D6 /* NetworkManager.swift */,
 				E34ADD9A2A0D2EB30048D4E3 /* DataProvider.swift */,
@@ -116,6 +121,7 @@
 				E31051D829F946510011A14A /* TableViewCell.swift */,
 				E31051DA29F962800011A14A /* WebViewController.swift */,
 				E35B485C29EEC9BF00EB462F /* Main.storyboard */,
+				E3AD24182A4B314800C2A953 /* Extentions.swift */,
 				E35B485F29EEC9C100EB462F /* Assets.xcassets */,
 				E35B486129EEC9C100EB462F /* LaunchScreen.storyboard */,
 				E35B486429EEC9C100EB462F /* Info.plist */,
@@ -143,6 +149,7 @@
 				E35B484F29EEC9BF00EB462F /* Sources */,
 				E35B485029EEC9BF00EB462F /* Frameworks */,
 				E35B485129EEC9BF00EB462F /* Resources */,
+				92D529FAE2D3B5577D3EBD52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +230,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		92D529FAE2D3B5577D3EBD52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetWorking1/Pods-NetWorking1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetWorking1/Pods-NetWorking1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetWorking1/Pods-NetWorking1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -238,10 +262,12 @@
 				E35B485729EEC9BF00EB462F /* AppDelegate.swift in Sources */,
 				E394A2752A1E4AD8007B5942 /* AlamofireNetworkRequest.swift in Sources */,
 				E31051D929F946510011A14A /* TableViewCell.swift in Sources */,
+				E3AD24192A4B314800C2A953 /* Extentions.swift in Sources */,
 				E31051DB29F962800011A14A /* WebViewController.swift in Sources */,
 				E35B485929EEC9BF00EB462F /* SceneDelegate.swift in Sources */,
 				E35262822A0A7D09002FDFB8 /* ImageProperties.swift in Sources */,
 				E34ADD9B2A0D2EB30048D4E3 /* DataProvider.swift in Sources */,
+				E39D7A0C2A4A5D1C002D5642 /* LoginViewController.swift in Sources */,
 				E31051D729F9419B0011A14A /* CoursesViewController.swift in Sources */,
 				E39277FF29FC1B6F007670E5 /* MainViewController.swift in Sources */,
 				E392780129FC1BEF007670E5 /* CollectionViewCell.swift in Sources */,
